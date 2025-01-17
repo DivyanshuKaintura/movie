@@ -1,0 +1,100 @@
+.movie-card {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+  width: 100%;
+  cursor: pointer;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+}
+
+.movie-poster {
+  position: relative;
+  height: 0;
+  padding-top: 150%; /* 2:3 aspect ratio */
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.3s ease;
+}
+
+.movie-poster.hovered {
+  border-color: #3498db;
+}
+
+.movie-poster img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: white;
+}
+
+.rating_c {
+  font-size: 2.2rem;
+  font-weight: bold;
+  padding-top: 4rem;
+}
+
+.rating_c p {
+  padding: 0  ;
+  margin: 0;
+}
+
+.star_c {
+  color: #4CAF50;
+}
+
+.genres {
+  display: flex;
+  flex-direction: column; 
+  padding-top: 3rem;
+}
+
+.genre {
+  background: transparent;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 2rem;
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+.movie-info {
+  padding: 12px;
+}
+
+.movie-title_c {
+  color: white;
+  margin: 0;
+  font-size: 1.3rem;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.movie-year {
+  color: white;
+  margin: 0;
+  font-size: 1.4rem;
+  align-items: flex-end;
+}

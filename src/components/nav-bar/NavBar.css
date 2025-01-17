@@ -1,0 +1,136 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #111;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .app-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+    color: #fff;
+  }
+  
+  .app-name {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding-left: 1rem;
+  }
+
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+    position: relative;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+  
+  .nav-link:hover {
+    color: #ccc;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 1rem;
+    }
+  
+    .nav-links {
+      gap: 1rem;
+    }
+  
+    .app-name {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav-brand {
+      gap: 0.3rem;
+    }
+  
+    .app-icon {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  
+    .nav-links {
+      gap: 0.8rem;
+    }
+  
+    .nav-link {
+      font-size: 0.9rem;
+    }
+  }
+
+.info {
+    background-color: #320f63;  
+    height: 3rem;
+    color: white;
+    font-style: italic;
+    font-size: 1.2rem;
+    padding-right: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-center {
+  flex: 1;
+  max-width: 600px;
+  margin: 0 2rem;
+  padding-left: 20rem;
+}
+
+.img_seach {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #666;
+}
+
+.search {
+  background-color: white;
+  max-width: fit-content;
+  padding: 0.5rem 1rem;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
