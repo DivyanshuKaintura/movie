@@ -6,7 +6,6 @@ import SearchDetail from '../searchDetails/SearchDetail';
 import Search from '../search/Search';  
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
-// Home component (you can replace this with your actual Home component)
 const Home = () => {
   return (
     <Router>
