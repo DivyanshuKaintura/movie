@@ -126,7 +126,7 @@ const SearchDetail = () => {
 
             <div className="movie-details-content">
                 <div className="movie-poster-section">
-                    <img src={movie.show.image?.medium} alt={`${movie.show.name} poster`} className="movie-poster-large" />
+                    <img src={movie.show.image?.original} alt={`${movie.show.name} poster`} className="movie-poster-large" />
                     <div className="quick-info">
                         <a href={movie.show.officialSite} target="_blank" rel="noopener noreferrer" className="official-site-btn">
                             Official Website
