@@ -11,8 +11,8 @@ const Home = () => {
   return (
     <Router>
       <NavBar />
+      <Movies />
       <Routes>
-        <Route path="/" element={<Movies />} />
         <Route path="/movie/:id" element={<MovieDetails />} />
         <Route path='/search' element={<Search />} />
         <Route path='search/:parm' element={<SearchDetail />} />
